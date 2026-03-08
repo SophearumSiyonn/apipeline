@@ -1,0 +1,15 @@
+// IMPORT Express Server
+const e1 = require('express');
+const app = e1();
+
+//SEARCH API
+app.get('/view', (req, res) => {
+    res.send('<html><body>helllooo worllldddd</body></html>');
+});
+
+
+// START THE EXPRESS SERVER. 5000 is the PORT NUMBER
+app.listen(5001, () =>
+    console.log('EXPRESS Server Started at Port No: 5001'));
+
+
